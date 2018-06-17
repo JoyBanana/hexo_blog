@@ -108,4 +108,6 @@ theme: aircloud
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: git@github.com:huangchenguang/huangchenguang.github.io.git
+  branch: master
