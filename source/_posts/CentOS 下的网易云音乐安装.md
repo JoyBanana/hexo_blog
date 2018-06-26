@@ -71,6 +71,7 @@ find / -name libstdc++.so.6
 <div class="666">
 <img src="/posts_img/sudo_nestease_cloud_music.png" width="100%" >
 </div>
+
 打开你的 /usr/share/applications 找到网易云的图标，打开属性 在命令一行(exec)最前面加上 sudo 就可以直接打开辣
 再来试一试，点击图标 成了！
 
