@@ -1,12 +1,10 @@
 ---
-title: Ubuntu下配置网卡
+title: Linux配置网卡
 date: 2018-7-6 10:09:12
 tags:
     - 网卡
-    - Ubuntu
-    -
 ---
-### 我们以Ubuntu为例
+### Debian系 <font color=#DCDCDC>以UbuntuServer1604为例</font>
 首先查一下你的网卡叫什么名字,可以用`ip addr`或者`ifconfig`,会列出系统所有的网卡,第一个一般是localhost(本地环回),它的名字叫`lo`,下面的是其他网卡,有线网卡一般叫`enp3s0`之类的名字。
 
 知道了网卡的名字，接下来我们要去配置它
@@ -18,7 +16,7 @@ tags:
 在本地环回下新建网卡配置为`static`或者`dhcp`
 
 如果手动指定ip需要配置的有
-```shell
+```bash
 auto yourNIC
 iface yourNIC inet static
 address xxx.xxx.xx.xx
@@ -27,11 +25,11 @@ gateway xx.xxx.xxx.xx
 dns-nameservices x.x.x.x x.x.x.x
 ```
 如果是无线网卡需要在下面添加
-```
+```bash
 wpa-ssid yourssid
 wpa-psk yourpasswd
 ```
-```shell
+```bash
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
 
@@ -58,3 +56,12 @@ iface enp3s0 inet static
 配置完成后保存退出就可以了,在网上查了下大家都说`/etc/init.d/networking restart`可以让网卡重启并生效，我自己试了下好像并不能让新配置的ip生效。
 
 需要`reboot`重启系统才能让设置生效.
+
+### Redhat系 <font color=#DCDCDC>以CentOS 7.1为例</font>
+
+与`Debian`系不同，需要修改`/etc/sysconfig/network-scripts/`下的文件。这个文件夹下不少文件，需要修改的是`ifcfg-XXX`的文件，这个名字和上面写的差不多。本地环回叫`lo`,有线网卡`enp0xxx`之类的名字。
+
+修改的值也是和Ubuntu类似。
+
+
+<div align="right"><font color=#e5e5e5>*最后更新于2018-08-10 11:21*</font></div>

@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Joy’Blog
-subtitle: 打倒一切反革命/一个变态/乐观的悲观主义者 
-description: "黄辰光的博客"
+title: 辰光的自习室
+subtitle: 什么也不会/一个变态/乐观的悲观主义者
+description: "辰光的自习室"
 author: 黄赶鹅
 language: zh
 timezone:
@@ -15,7 +15,7 @@ timezone:
 
 sidebar-avatar: img/avatar.png
 
-SEOTitle: Joy's Blog
+SEOTitle: 辰光的自习室
 header-img: img/avatar.png
 email: huangranran1994@outlook.com
 keyword: "腾讯"
@@ -73,7 +73,7 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
@@ -82,7 +82,7 @@ index_generator:
   path: ''
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
