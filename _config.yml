@@ -4,7 +4,7 @@
 
 # Site
 title: 辰光的自习室
-subtitle: 什么也不会/一个变态/乐观的悲观主义者
+subtitle: 一个变态 / 学艺不精 / 喜欢卖弄
 description: "辰光的自习室"
 author: 黄赶鹅
 language: zh
@@ -33,7 +33,7 @@ search:
 friends: [
     {
         title: "wula meng",
-        href: "https://crazymeng4586.github.io/"
+        href: "https://wulameng.me/"
 #    },{
 #        title: "",
 #        href: ""
