@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 辰光的自习室
+title: 黄赶鹅的自习室
 subtitle: 一个变态 / 学艺不精 / 喜欢卖弄
-description: "辰光的自习室"
+description: "黄赶鹅的自习室"
 author: 黄赶鹅
 language: zh
 timezone:
@@ -15,7 +15,7 @@ timezone:
 
 sidebar-avatar: img/avatar.png
 
-SEOTitle: 辰光的自习室
+SEOTitle: 黄赶鹅的自习室
 header-img: img/avatar.png
 email: huangranran1994@outlook.com
 keyword: "腾讯"
@@ -43,7 +43,8 @@ friends: [
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://huangchenguang.github.io
+#url: http://huangchenguang.github.io
+url：https://blog.huanghaha.cc
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -109,5 +110,5 @@ theme: aircloud
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github.com:huangchenguang/huangchenguang.github.io.git
+  repository: git@huanghaha.cc:/usr/share/nginx/hexo_blog/hexo.git/
   branch: master
