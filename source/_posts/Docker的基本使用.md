@@ -53,3 +53,5 @@ docker run -p 3306:3306 --name mymysql -v /opt/data:/var/lib/mysql -e MYSQL_ROOT
 |`docker start/stop/restart ‘yourInstance’`| 开启、停止、重启你的实例|
 |`docker exec -it ‘yourInstance’ bash`| 进入你的实例容器|
 |`docker rm ‘yourInstance’` | 移除你的容器|
+
+你可以使用`docker`做很多事情，甚至可以在x86架构的平台上运行arm程序！
