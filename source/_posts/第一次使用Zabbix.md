@@ -33,4 +33,13 @@ docker run --name zabbix-appliance -t \
 apt install zabbix-agent
 ```
 
-修改`zabbix-agent`配置文件`vim /etc/zabbix/zabbix_agentd.conf`，设置监控端的`IP`地址和本机主机名。<p><font color=#FF4040>**注：**本地主机名必须配置的与服务端一致。</font></p>
+修改`zabbix-agent`配置文件`vim /etc/zabbix/zabbix_agentd.conf`，设置监控端的`IP`地址和本机主机名。<p><font color=#FF4040> **注：** 本地主机名必须配置的与服务端一致。</font></p>
+
+#### Zabbix钉钉报警
+
+关于钉钉报警，直接向<a href="https://open-doc.dingtalk.com/docs/doc.htm?treeId=257&articleId=105735&docType=1">钉钉机器人</a>发送`URL`请求就可以，这种脚本真是的全网都是，一搜一大把，我就不多废话了，随便找个脚本写进去配置好就行了。
+
+我要说的是，我们在`docker`容器内部署的`zabbix`，发送`URL`请求可能会缺少`Python`库，或者没有安装`curl`等等等等。你可以直接进入容器安装。这个镜像是基于<a href="https://alpinelinux.org/">AlpineLinux</a>，信奉`Small. Simple. Secure.`她有自己的包管理器，你可以直接安装`Python3`或者其他工具：
+```
+apk install python3
+```
