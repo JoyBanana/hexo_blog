@@ -3,8 +3,8 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 辰光的自习室
-subtitle: 一个变态 / 学艺不精 / 喜欢卖弄
+title: 自习室
+subtitle:  学艺不精 / 日日自新
 description: "辰光的自习室"
 author: 黄赶鹅
 language: zh
@@ -21,9 +21,8 @@ email: huangranran1994@outlook.com
 keyword: "腾讯"
 
 # 社交平台：
-weibo_username:     u/5200868916
 zhihu_username:     chen_guang
-github_username:    huangchenguang
+github_username:    JoyBanana
 #搜索功能：
 search:
   path: search.json
@@ -34,10 +33,12 @@ friends: [
     {
         title: "wula meng",
         href: "https://wulameng.me/"
+   },{
+        title: "mr qiao",
+        href: "http://www.mrqiaoblog.com/blog"
 #    },{
 #        title: "",
 #        href: ""
-#    }
     }
 ]
 
